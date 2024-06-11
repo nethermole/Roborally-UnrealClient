@@ -26,7 +26,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	virtual void GetBoardInfo_TriggersDrawBoard(FString gameId);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Kyle")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Kyle")	//todo: either everything gets this, or none of them do
 	TSubclassOf<class ATile> blueprintTile;
 
 	void DrawBoard(FHttpRequestPtr request, FHttpResponsePtr response, bool connectedSuccessfully);
